@@ -7,9 +7,9 @@ import datetime
 import time
 import os
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
-# ts.set_token('7345b9fa7eba054aeacb922c113a3625f91c6f5793356b20e9bb4eb6')
+# ts.set_token('****************************************************')#api personal
 start_date, end_date ='20100101', '20190408'
-pro = ts.pro_api('7345b9fa7eba054aeacb922c113a3625f91c6f5793356b20e9bb4eb6')
+pro = ts.pro_api('**************************************************')#api personal
 data = pro.daily(ts_code='000001.SZ', start_date=start_date, end_date=end_date)
 # data = data[["trade_date", "open", "high", "low", "close", "vol"]]
 data = data[["trade_date", "close"]]
